@@ -1,3 +1,50 @@
+// Footer form 
+
+// form = document.getElementById("commentForm");
+// form.addEventListener("submit", (e) => {
+//     e.preventDefault();
+
+//     const image = e.target.document.getElementById('image');
+//     const name = e.target.document.getElementById('commentInput');
+//     const comment = e.target.getElementById('commentMessage');
+
+//     const profile = document.getElementsByClassName('image');
+//     profile.textContent = image;
+
+//     const h4 = document.createElement('h4');
+//     h4.textContent = name.value;
+//     const profileName = document.getElementById('profileName');
+//     profileName.append(h4);
+//     name.value = "";
+// }
+// )
+
+
+function submitComment () {
+    let userInput = document.querySelector('#comment-input');
+    let message = document.querySelector('#message');
+
+    message.innerHTML = `userInput.value`
+    userInput.reset();
+}
+
+
+const form = document.getElementById("comment-form");
+
+const comments = document.createElement("ul");
+document.getElementById("message").append(comments);
+
+form.addEventListener("submit", (e) => {
+    e.preventDefault();
+    let userInput = e.target.document.querySelector('#comment-input');
+    let li = document.createElement("li");
+    li.textContent = userInput.value;
+    comments.append(li);
+    userInput.value = "";
+});
+
+
+
 /* 
 
 100 per page api:
