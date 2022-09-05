@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CryptoPesa</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./front-end/css/styles.css">
+    <script src="https://kit.fontawesome.com/10cc97b46a.js" crossorigin="anonymous"></script>
+    <script src="./front-end/js/index.js" defer></script>
+</head>
+<body>
+
+    <!-- NAVBAR SECTION STARTS -->
+
+    <div class="container">
+        <nav class="navbar navbar-expand-md navbar-light fixed-top" style="background-color: #e3f2fd;">
+            <div class="container-fluid">
+            <a class="navbar-brand">
+                <img src="./front-end/images-videos/logo_crypto.webp" alt="Logo" title="Go to Home Page" height="40" width="40">
+                Crypto<span style="color: green;">Pesa</span>
+            </a>
+            <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#toggleMobileMenu"
+                aria-controls="toggleMobileMenu"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+                >
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collspse navbar-collapse" id="toggleMobileMenu">
+                    <ul class="navbar-nav ms-auto text-left">
+                        </li>
+                        <li>
+                            <a href="#explore" class="nav-link">Exchanges</a>
+                        </li>
+                        <li>
+                            <a href="#" class="nav-link">Comments</a>
+                        </li>
+                        <li>
+                        <li>
+                            <form id="form-1" class="d-flex" class="nav-link">
+                                <input id="searchCoinID" class="form-control me-2" type="search" placeholder="Search" aria-label="Search" required>
+                                <button class="btn btn-outline-primary" type="submit">Search</button>
+                            </form>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <!-- NAVBAR SECTION ENDS -->
+
+    <!-- MAIN SECTION STARTS -->
+
+    <main>
+        <section class="welcome">
+            <div class="video-background">
+                <div class="video-wrap">
+                    <div id="video">
+                        <video src="./front-end/images-videos/blockchain-video.mp4" id="bgvid" autoplay type="video/mp4" playsinline loop muted></video>
+                    </div>
+                </div>
+            </div>
+            <div class="caption text-center">
+                <h2>Crypto<span style="color: green;">Pesa</span></h2>
+                <p class="lead">Crypto<span style="color: green;">Pesa</span> is a digital currency platform that provides market updates.
+                <br> It allows users to view digital assets through anonymized networks.It <br> also  provides the current pricing list details <br> as a reference to the user. 
+                <br>
+                <br>
+                <br>
+                Interested in <span style="color: green;">up</span> and <span style="color: red;">down</span> of market ?
+                </p>
+                <br>
+                <br>
+                <a class="btn btn-primary" href="#explore" role="button">Explore Market</a>
+            </div>
+        </section>
+        <div class="b-divider"></div>
+        <br>
+        <br>
+        <br>
+        <section id="search my-4 mx-5">
+            <div class="container">
+                <div class="row no-gutters">
+                    <div class="col-lg-5">
+                        <img src="./front-end/images-videos/social_crypto_logos.png" class="img-fluid" alt="Crypto logos" title="Cryptos">
+                    </div>
+                    <div class="col-lg-7 px-5 pt-3">
+                        <div class="p-row">
+                            <div id="explore" class="col-lg-7">
+                                <h1 class="py-2">Crypto<span style="color: green;">Pesa</span></h1>
+                                <p>You can search thousands of cryptocurrency coins available in the market. Get to know prices, rank, high and low of coins.</p>
+                                <p class="lead">
+                                Get the latest price changes and market capitalization from your favorite crypto coins. 
+                                </p>
+                            <div class="form-row">
+                                <form id="form-2"  class="col-lg-7">
+                                    <input id="searchCoinID2" class="form-control me-2 my-4 ms-auto" type="search" placeholder="Search" aria-label="Search" required>
+                                    <button class="btn btn-outline-primary mx-2 py-2" type="submit">Search</button>
+                                    <button id="resetButton" class="btn btn-outline-primary py-2" type="submit" onclick="resetSearch()">Reset</button>
+                                </form>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <br>
+        <br>
+        <br>
+        <!-- divider -->
+        <div class="b-divider"></div>
+
+        <br>
+<div class="container col-xl-10 col-xxl-8 px-4 py-5 clearfix">
+    <div class="row align-items-center g-lg-5 py-5">
+            <!-- search coins section starts -->
+            <section id="results" class="col-md-10 mx-auto col-lg-5" >
+                <h1 style="font-size: 1rem;">Cryptocurrency Prices by Market Cap</h1>
+                <p style="font-size: 1rem;">The global cryptocurrency market cap today is $1.02 Trillion, a <span style="color: red;">-0.2% </span> change in the last 24 hours.</p>
+                <h3 class="todayPrice" style="font-size: 1rem;">Today's Cryptocurrency prices</h3>
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th scope="col">Today markets prices</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tableBody">
+                    </tbody>
+                </table>
+
+            </section>
+            <!-- search coins section ends -->
+
+            <!-- Modal starts -->
+        <div class="modal fade" id="modalID" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-lg">
+                <div class="modal-content">
+                    <div id="modalHeader" class="modal-header">
+                        <img id="modalCoinImage"  src="./front-end/images-videos/loadingIcon.png" height="30px">
+                        <h5 class="modal-title" id="modalH5">Coin title</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div id="modalDiv" class="modal-body">
+                        <table class="table table-hover">
+                            <thead>
+                            <tr>
+                                <th scope="col">Rank</th>
+                                <th scope="col">Current Price</th>
+                                <th scope="col"> <span style="color: green;">High</span></th>
+                                <th scope="col"><span style="color: red;">Low</span> 
+                                </th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <th id="marketCapRankTD"scope="row">...</th>
+                                    <td id="currentPriceTD">...</td>
+                                    <td id="high24TD">...</td>
+                                    <td id="low24TD">...</td>
+                            </tbody>
+                        </table>
+                        <h4>Chart</h4>
+                        <img src="./front-end/images-videos/chart.png" alt="Chart" title="chart" class="img-fluid">
+                        <hr>
+                        <div class="list-group">
+                            <h6 style="font-size: 1rem;">Top Trending coins in the last 24 hours</h6>
+                            <div id="trendingResults">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary" disabled>Add to Favorites</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- model ends -->
+    </div>
+</div>
+<div class="b-divider"></div>
+</main>
+
+    <!-- MAIN SECTION ENDS -->
+
+    <!-- COMMENTS SECTION STARTS -->
+
+    <section id="comments">
+        <br>
+        <br>
+        <div class="container col-xl-10 col-xxl-8 px-4 py-5">
+            <div class="row align-items-center g-lg-5 py-5">
+                <h4 class="text-center mb-4 pb-2">Comments section</h4>
+
+                
+
+                    
+                    <div class="col-md-12 col-lg-10 col-xl-8">
+                        <div class="card">
+                          <div class="card-body">
+                            <div class="d-flex flex-start align-items-center">
+                              <!-- append avatar and name here -->
+                              <img class="rounded-circle shadow-1-strong me-3"
+                                src="./front-end/images-videos/avatar.webp" alt="avatar" width="40"
+                                height="40" />
+                                <h4>Anonymous</h4>
+                              </div>
+                              <p class="mt-3 mb-4 pb-2">
+                              <!-- paragraph -->
+                              Lorem ipsum dolor sit amet consectetur adipisicing elit. Et incidunt, vel iure nesciunt ipsum inventore facere eum ducimus. Aut, saepe eaque. Odio architecto assumenda officiis dolore cumque consequuntur eaque labore.
+                            </p>
+                            </div>
+
+                            <div class="small d-flex justify-content-start">
+                              <a href="#!" class="d-flex align-items-center me-3">
+                                <i class="far fa-thumbs-up me-2"></i>
+                                <p class="mb-0">Like</p>
+                              </a>
+                              <a href="#!" class="d-flex align-items-center me-3">
+                                <i class="far fa-comment-dots me-2"></i>
+                                <p class="mb-0">Comment</p>
+                              </a>
+                              <a href="#!" class="d-flex align-items-center me-3">
+                                <i class="fas fa-share me-2"></i>
+                                <p class="mb-0">Share</p>
+                              </a>
+                            </div>
+                          </div>
+                          <div class="card-footer py-3 border-0" style="background-color: #f8f9fa;">
+                            <div class="d-flex flex-start w-100">
+                              <img class="rounded-circle shadow-1-strong me-3"
+                                src="./front-end/images-videos/avatar.webp" alt="avatar" width="40"
+                                height="40" />
+
+                             
+
+                              <div class="form-outline w-100">
+                                
+
+                                <textarea class="form-control" id="textAreaExample" rows="4"
+                                  style="background: #fff;"></textarea>
+                                <label class="form-label" for="textAreaExample" aria-placeholder="Write your comments here">Message</label>
+                              </div>
+                            </div>
+                            <div class="float-end mt-2 pt-1">
+                              <button type="button" class="btn btn-primary btn-sm">Post comment</button>
+                              <button type="button" class="btn btn-outline-primary btn-sm">Cancel</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+
+
+            </div>
+        </div>
+    </section>
+
+    <!-- COMMENTS SECTION ENDS -->
+
+    <div class="b-divider"></div>
+    <!-- FOOTER SECTION STARTS -->
+
+ <!-- Footer -->
+<footer class="text-center text-lg-start bg-dark text-white text-muted">
+    <!-- Section: Social media -->
+    <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+      <!-- Left -->
+      <div class="me-5 d-none d-lg-block">
+        <span>Get connected with us on social networks:</span>
+      </div>
+      <!-- Left -->
+  
+      <!-- Right -->
+      <div>
+        <a href="#" class="me-4">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+        <a href="#" class="me-4">
+          <i class="fab fa-twitter"></i>
+        </a>
+        <a href="#" class="me-4">
+          <i class="fab fa-google"></i>
+        </a>
+        <a href="#" class="me-4">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a href="#" class="me-4">
+          <i class="fab fa-linkedin"></i>
+        </a>
+        <a href="#" class="me-4">
+          <i class="fab fa-github"></i>
+        </a>
+      </div>
+      <!-- Right -->
+    </section>
+    <!-- Section: Social media -->
+  
+    <!-- Section: Links  -->
+    <section class="">
+      <div class="container text-center text-md-start mt-5">
+        <!-- Grid row -->
+        <div class="row shadow-none mt-3 text-white bg-dark">
+          <!-- Grid column -->
+          <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+            <!-- Content -->
+            <h6 class="text-uppercase fw-bold mb-4">
+                <i class="fa-solid fa-gem text-secondary" style="color:green;"></i>   Crypto<span style="color: green;">Pesa</span>
+            </h6>
+            <p>
+              It's a simple applications that fetches data from public api to display prices and ranks of various coins in the markets.
+            </p>
+          </div>
+          <!-- Grid column -->
+  
+          <!-- Grid column -->
+          <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold mb-4">
+              Products
+            </h6>
+            <p>
+              <a href="#!" class="text-reset text-decoration-none">Buy crypto</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset text-decoration-none">Sell crpto</a>
+            </p>
+            <p>
+              <a href="#explore" class="text-reset text-decoration-none">Exchanges</a>
+            </p>
+            <p>
+              <a href="#explore" class="text-reset text-decoration-none">Markets</a>
+            </p>
+          </div>
+          <!-- Grid column -->
+  
+          <!-- Grid column -->
+          <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold mb-4">
+              Useful links
+            </h6>
+            <p>
+              <a href="#explore" class="text-reset text-decoration-none">Pricing</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset text-decoration-none"></a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset text-decoration-none">Orders</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset text-decoration-none">Help</a>
+            </p>
+          </div>
+          <!-- Grid column -->
+  
+          <!-- Grid column -->
+          <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
+            <p><i class="fas fa-home me-3 text-secondary"></i> Nairobi, NBI 1012, Kenya</p>
+            <p>
+              <i class="fas fa-envelope me-3 text-secondary"></i>
+              info@example.co.ke
+            </p>
+            <p><i class="fas fa-phone me-3 text-secondary"></i> + 254 712 345 678</p>
+            <p><i class="fas fa-print me-3 text-secondary"></i> + 254 746 - - - -  - 94</p>
+          </div>
+          <!-- Grid column -->
+        </div>
+        <!-- Grid row -->
+      </div>
+    </section>
+    <!-- Section: Links  -->
+  
+    <!-- Copyright -->
+    <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.025);">
+      © 2022 Copyright
+    </div>
+    <!-- Copyright -->
+  </footer>
+  <!-- Footer -->
+
+    <!-- FOOTER SECTIONS ENDS -->
+
+</body>
+</html>

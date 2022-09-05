@@ -1,0 +1,92 @@
+body {
+  background: rgb(231, 238, 238);
+}
+
+nav {
+  box-shadow: 0 10px rgba(212, 207, 207, 0.5);
+}
+.row {
+  background: #fff;
+  border-radius: 30px;
+  box-shadow: 12px 12px 22px gray;
+}
+
+.img-fluid {
+  border-radius: 30px;
+}
+.welcome {
+  position: relative;
+}
+.welcome video {
+  height: 100vh;
+  width: 100%;
+  background-position: absolute;
+  object-fit: cover;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.welcome .caption {
+  position: absolute;
+  top: 30%;
+  width: 100%;
+  color: #fff;
+}
+
+.navbar-brand img {
+  border-radius: 50%;
+}
+
+.lead {
+  font-stretch: extra-expanded;
+  font-size: 1rem;
+  margin: auto;
+  letter-spacing: 0.03em;
+  font-weight: 600;
+}
+
+.b-divider {
+    height: 0.5rem;
+    box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+    background-color: rgba(0, 0, 0, .1);
+    border: solid rgba(0, 0, 0, .15);
+    border-width: 1px 0;
+  }
+  
+  @media (min-width: 992px) {
+    .rounded-lg-3 { border-radius: .3rem; }
+  }
+  
+  
+  @media (min-width: 768px) {
+    .bd-placeholder-img-lg {
+      font-size: 3.5rem;
+    }
+  }
+
+  
+  #results {
+    margin-top: 1%;
+    margin-bottom: 5%;
+    margin-left: 25%;
+    margin-right: 25%;
+    
+  }
+  
+  
+  #explore {
+    margin-bottom: 5px;
+    margin-left: 20%;
+    margin-right: 20%;
+  }
+  
+  /* #footer {
+        text-align: center;
+  } */
+
+  .marketRank {
+    color: green;
+  }
+
+  .todayPrice {
+    margin-top: 50px;
+  }
