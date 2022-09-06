@@ -64,6 +64,9 @@ nav {
   }
 
   
+  #modalButton {
+    z-index: 100;
+  }
   #results {
     margin-top: 1%;
     margin-bottom: 5%;

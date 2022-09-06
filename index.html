@@ -46,7 +46,7 @@
           <li>
           <li>
             <form id="form-1" class="d-flex" class="nav-link">
-              <input id="searchCoinID" class="form-control me-2" type="search" placeholder="Search" aria-label="Search" required>
+              <input id="searchCoinNav" class="form-control me-2" type="search" placeholder="Search coin" aria-label="Search" required>
               <button class="btn btn-outline-primary" type="submit"><i class="fa fa-search" aria-hidden="true"></i></button>
             </form>
           </li>
@@ -107,6 +107,8 @@
                 <button class="btn btn-outline-primary mx-2 py-2" type="submit">Search</button>
                 <button id="resetButton" class="btn btn-outline-primary py-2" type="submit" onclick="resetSearch()">Clear</button>
               </form>
+              <br>
+              <div id="searchResults"></div>
             </div>
           </div>
         </div>
@@ -145,8 +147,8 @@
       <div class="modal-dialog modal-dialog-centered modal-lg">
         <div class="modal-content">
           <div id="modalHeader" class="modal-header">
-              <img id="modalCoinImage"  src="./front-end/images-videos/loadingIcon.png" height="30px">
-              <h5 class="modal-title" id="modalH5">Coin title</h5>
+              <img id="modalCoinImage"  src="./front-end/images-videos/logo_crypto.webp" height="30px">
+              <h5 class="modal-title" id="modalH5">Crpto<span style="color: green;">Pesa</span></h5>
               <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
           </div>
           <div id="modalDiv" class="modal-body">
@@ -162,10 +164,10 @@
                 </thead>
                 <tbody>
                 <tr>
-                  <th id="marketCapRankTD"scope="row">...</th>
-                    <td id="currentPriceTD">...</td>
-                    <td id="high24TD">...</td>
-                    <td id="low24TD">...</td>
+                  <th id="marketCapRankTD"scope="row">Loading..</th>
+                    <td id="currentPriceTD">Loading..</td>
+                    <td id="high24TD">Loading..</td>
+                    <td id="low24TD">Loading..</td>
                 </tbody>
             </table>
             <h4>Chart</h4>

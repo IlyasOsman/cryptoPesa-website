@@ -103,24 +103,24 @@ const displaycoinGeckoApiData = (json) => {
 /*
     Search Function to search for coins based on user input. 
 */
-const topSearch = () => {
-    const topSearchForm = document.querySelector('#form-1');
-    topSearchForm.addEventListener('submit', (event) => {
+const navCoinSearch = () => {
+    const navSearchForm = document.querySelector('#form-1');
+    navSearchForm.addEventListener('submit', (event) => {
         event.preventDefault()
-        const userInput = document.querySelector('input#searchCoinID');
+        const userInput = document.querySelector('input#searchCoinNav');
         fetch(`https://api.coingecko.com/api/v3/search?query=${userInput.value}`, { 
                 headers: {
                     Accept: "application/json"
                 }
             })
-                .then( response => response.json())
-                .then(json => {
+            .then( response => response.json())
+            .then(json => {
         
-                    renderSearchCoins(json.coins)
-                })
+            displaySearchCoins(json.coins)
+            })
     });
 }
-topSearch()
+navCoinSearch()
 
 
 
@@ -140,27 +140,27 @@ const mainSearch = () => {
             })
                 .then( response => response.json())
                 .then(json => {
-                    renderSearchCoins(json.coins)
+                    displaySearchCoins(json.coins)
                 })
     });
 }
 mainSearch()
 
 
-// Function to render search results
-function renderSearchCoins(coins) {
+// Function to display search results
+function displaySearchCoins(coins) {
     const searchResults = document.querySelector('#searchResults');
     coins.forEach(coin => {
         const div = document.createElement('div')
         div.className = 'list-group';
         div.innerHTML = `
                 <button data-symbol="${coin.symbol}" id="modalButton" type="button" class="list-group-item list-group-item-action" data-bs-toggle="modal" data-bs-target="#modalID">
-                    <img id="searchCoinImage"src="${coin.thumb}">
-                    <div class="d-flex w-100 justify-content-between">
-                            <h6 id="coinName" class="mb-1">${coin.name}  ${coin.symbol.toUpperCase()}</h6>
-                        <small>Rank:<span class="marketRank">${coin.market_cap_rank}<span></small>
-                    </div>
-                </button>
+                <div class="d-flex w-100 justify-content-between">
+                <span class="marketRank">${coin.market_cap_rank}</span>
+                <img id="searchCoinImage" src="${coin.image}" alt="" height="30px">
+                <p id="coinName" class="mb-1">${coin.name} ${coin.symbol.toUpperCase()}</p>
+                </div>
+            </button
         `
         div.querySelector('button').addEventListener('click', (e) => {
             searchModalData(coin)
