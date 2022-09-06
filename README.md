@@ -6,28 +6,31 @@ The **Crypto```Pesa```** website application is a [Moringa School](https://morin
 
 ### 1. Usage of Application
 
-A user can access and do the following: 
+A user can access and do the following:
+<br/> 
 &check; Searchs for thousands of coins.
+<br/>
 &check; View :
-    > &check; Prices of coins.<br />
-    > &check; Ranks of coins.<br />
-    > &check; High and low prices of each coins in the last 24 hours.
-&check; Click on a coin for additional details.
-&check; Access all above for free.
-&check; Add comments
+<br/>
+     &nbsp; &nbsp; &check; Prices of coins.<br />
+     &nbsp; &nbsp; &check; Ranks of coins.<br />
+     &nbsp; &nbsp; &check; High and low prices of each coins in the last 24 hours.<br/>
+&check; Click on a coin for additional details.<br/>
+&check; Access all above for free.<br/>
+&check; Add comments <br/>
 
 ### 2. Technologies
 
-The following technologies was used to build the front-end of applications
+The following technologies was used to build the front-end of applications <br/>
 
-&check; HTML
-&check; CSS
-&check; JavaScript
-&check; Bootstrap 
+&check; HTML <br/>
+&check; CSS <br/>
+&check; JavaScript <br/>
+&check; Bootstrap <br/>
 
 ### 3. Acknowledgement
 
-&check; Thanks to all who helped me overcame blockers.
+&check; Thanks to all who helped me overcame blockers. <br/>
 &check; Thanks to [Bootstrap](https://getbootstrap.com/) for making working easier.
 
 ### 4. LICENSE
