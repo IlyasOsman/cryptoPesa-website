@@ -8,7 +8,7 @@ The **Crypto```Pesa```** website application is a [Moringa School](https://morin
 
 A user can access and do the following:
 <br/> 
-&check; Searchs for thousands of coins.
+&check; Searchs for **thousands** of coins.
 <br/>
 &check; View :
 <br/>
@@ -28,17 +28,19 @@ The following technologies was used to build the front-end of applications <br/>
 &check; JavaScript <br/>
 &check; Bootstrap <br/>
 
-### 3. Acknowledgement
+### 3. 
+
+### . Acknowledgement
 
 &check; Thanks to all who helped me overcame blockers. <br/>
 &check; Thanks to [Bootstrap](https://getbootstrap.com/) for making working easier.
 
-### 4. LICENSE
+### . LICENSE
 &check; Here [MIT](./MIT) is project license.
 
-### 5. Author 
+### . Author 
 
- &check; Ilyas Osman 
+ &check; Ilyas Ali
         <br/>
         &nbsp; &nbsp; &check; [Github](https://github.com/IlyasOsman)
         <br/>
@@ -47,4 +49,3 @@ The following technologies was used to build the front-end of applications <br/>
         &nbsp; &nbsp; &check; [Twitter](https://twitter.com/iOs__man)
 
 <p>Like project? Give me a star.</p>
-
