@@ -29,7 +29,7 @@ The following technologies was used to build the front-end of applications <br/>
 &check; Bootstrap <br/>
 
 ### 3. Live site
-&nbsp; Here [www.cryptopesamarket.com]() is cryptopesa live website accessible to the public<br/>
+&nbsp; Here [www.cryptopesamarket.com](https://ilyasosman.github.io/cryptoPesa-website/) is cryptopesa live website accessible to the public<br/>
 
 ### 4. Features
 &check; The website has the following. <br/>
