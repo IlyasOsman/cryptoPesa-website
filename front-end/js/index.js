@@ -16,6 +16,8 @@ form.addEventListener("submit", (e) => {
 
 
 
+
+
 /* 
 
 100 per page api:
@@ -275,3 +277,10 @@ const resetSearch = () => {
 document.addEventListener("DOMContentLoaded", function() {
     fetchTrendingCoins()
 });
+
+//Relocating search button when clicked
+
+function relocateToSearch()
+{
+     location.href = "#searchResults";
+}
