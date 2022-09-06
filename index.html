@@ -60,137 +60,134 @@
 
     <!-- MAIN SECTION STARTS -->
 
-    <main>
-        <section class="welcome">
-            <div class="video-background">
-                <div class="video-wrap">
-                    <div id="video">
-                        <video src="./front-end/images-videos/blockchain-video.mp4" id="bgvid" autoplay type="video/mp4" playsinline loop muted></video>
-                    </div>
-                </div>
+<main>
+<section class="welcome">
+  <div class="video-background">
+      <div class="video-wrap">
+          <div id="video">
+              <video src="./front-end/images-videos/blockchain-video.mp4" id="bgvid" autoplay type="video/mp4" playsinline loop muted></video>
+          </div>
+      </div>
+  </div>
+  <div class="caption text-center">
+      <h2>Crypto<span style="color: green;">Pesa</span></h2>
+      <p class="lead">Crypto<span style="color: green;">Pesa</span> is a digital currency platform that provides market updates.
+      <br> It allows users to view digital assets through anonymized networks.It <br> also  provides the current pricing list details <br> as a reference to the user. 
+      <br>
+      <br>
+      <br>
+      Interested in <span style="color: green;">up</span> and <span style="color: red;">down</span> of market ?
+      </p>
+      <br>
+      <br>
+      <a class="btn btn-primary" href="#explore" role="button">Explore Market</a>
+  </div>
+</section>
+<div class="b-divider"></div>
+    <br>
+    <br>
+    <br>
+<section id="search my-4 mx-5">
+  <div class="container">
+    <div class="row no-gutters">
+      <div class="col-lg-5">
+          <img src="./front-end/images-videos/social_crypto_logos.png" class="img-fluid" alt="Crypto logos" title="Cryptos">
+      </div>
+      <div class="col-lg-7 px-5 pt-3">
+        <div class="p-row">
+          <div id="explore" class="col-lg-7">
+            <h1 class="py-2">Crypto<span style="color: green;">Pesa</span></h1>
+            <p>You can search thousands of cryptocurrency coins available in the market. Get to know prices, rank, high and low of coins.</p>
+            <p class="lead">
+              Get the latest price changes and market capitalization from your favorite crypto coins. 
+            </p>
+            <div class="form-row">
+              <form id="form-2"  class="col-lg-7">
+                <input id="searchCoinID2" class="form-control me-2 my-4 ms-auto" type="search" placeholder="Search" aria-label="Search" required>
+                <button class="btn btn-outline-primary mx-2 py-2" type="submit">Search</button>
+                <button id="resetButton" class="btn btn-outline-primary py-2" type="submit" onclick="resetSearch()">Clear</button>
+              </form>
             </div>
-            <div class="caption text-center">
-                <h2>Crypto<span style="color: green;">Pesa</span></h2>
-                <p class="lead">Crypto<span style="color: green;">Pesa</span> is a digital currency platform that provides market updates.
-                <br> It allows users to view digital assets through anonymized networks.It <br> also  provides the current pricing list details <br> as a reference to the user. 
-                <br>
-                <br>
-                <br>
-                Interested in <span style="color: green;">up</span> and <span style="color: red;">down</span> of market ?
-                </p>
-                <br>
-                <br>
-                <a class="btn btn-primary" href="#explore" role="button">Explore Market</a>
-            </div>
-        </section>
-        <div class="b-divider"></div>
-        <br>
-        <br>
-        <br>
-        <section id="search my-4 mx-5">
-            <div class="container">
-                <div class="row no-gutters">
-                    <div class="col-lg-5">
-                        <img src="./front-end/images-videos/social_crypto_logos.png" class="img-fluid" alt="Crypto logos" title="Cryptos">
-                    </div>
-                    <div class="col-lg-7 px-5 pt-3">
-                        <div class="p-row">
-                            <div id="explore" class="col-lg-7">
-                                <h1 class="py-2">Crypto<span style="color: green;">Pesa</span></h1>
-                                <p>You can search thousands of cryptocurrency coins available in the market. Get to know prices, rank, high and low of coins.</p>
-                                <p class="lead">
-                                Get the latest price changes and market capitalization from your favorite crypto coins. 
-                                </p>
-                            <div class="form-row">
-                                <form id="form-2"  class="col-lg-7">
-                                    <input id="searchCoinID2" class="form-control me-2 my-4 ms-auto" type="search" placeholder="Search" aria-label="Search" required>
-                                    <button class="btn btn-outline-primary mx-2 py-2" type="submit">Search</button>
-                                    <button id="resetButton" class="btn btn-outline-primary py-2" type="submit" onclick="resetSearch()">Clear</button>
-                                </form>
-                            </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <br>
-        <br>
-        <br>
-        <!-- divider -->
-        <div class="b-divider"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+    <br>
+    <br>
+    <br>
+    <!-- divider -->
+<div class="b-divider"></div>
 
-        <br>
+    <br>
 <div class="container col-xl-10 col-xxl-8 px-4 py-5 clearfix">
-    <div class="row align-items-center g-lg-5 py-5">
-            <!-- search coins section starts -->
-            <section id="results" class="col-md-10 mx-auto col-lg-5" >
-                <h1 style="font-size: 1rem;">Cryptocurrency Prices by Market Cap</h1>
-                <p style="font-size: 1rem;">The global cryptocurrency market cap today is $1.02 Trillion, a <span style="color: red;">-0.2% </span> change in the last 24 hours.</p>
-                <h3 class="todayPrice" style="font-size: 1rem;">Today's Cryptocurrency prices</h3>
-                <table class="table">
-                    <thead>
-                        <tr>
-                            <th scope="col">Today markets prices</th>
-                        </tr>
-                    </thead>
-                    <tbody id="tableBody">
-                    </tbody>
-                </table>
+  <div class="row align-items-center g-lg-5 py-5">
+          <!-- coins section starts -->
+    <section id="results" class="col-md-10 mx-auto col-lg-5" >
+      <h1 style="font-size: 1rem;">Cryptocurrency Prices by Market Cap</h1>
+      <p style="font-size: 1rem;">The global cryptocurrency market cap today is $1.02 Trillion, a <span style="color: red;">-0.2% </span> change in the last 24 hours.</p>
+      <h3 class="todayPrice" style="font-size: 1rem;">Today's Cryptocurrency prices</h3>
+      <table class="table">
+          <thead>
+              <tr>
+                  <th scope="col">Today markets prices</th>
+              </tr>
+          </thead>
+          <tbody id="tableBody">
+          </tbody>
+      </table>
+    </section>
+          <!--coins section ends -->
 
-            </section>
-            <!-- search coins section ends -->
-
-            <!-- Modal starts -->
-        <div class="modal fade" id="modalID" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered modal-lg">
-                <div class="modal-content">
-                    <div id="modalHeader" class="modal-header">
-                        <img id="modalCoinImage"  src="./front-end/images-videos/loadingIcon.png" height="30px">
-                        <h5 class="modal-title" id="modalH5">Coin title</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div id="modalDiv" class="modal-body">
-                        <table class="table table-hover">
-                            <thead>
-                            <tr>
-                                <th scope="col">Rank</th>
-                                <th scope="col">Current Price</th>
-                                <th scope="col"> <span style="color: green;">High</span></th>
-                                <th scope="col"><span style="color: red;">Low</span> 
-                                </th>
-                            </tr>
-                            </thead>
-                            <tbody>
-                            <tr>
-                                <th id="marketCapRankTD"scope="row">...</th>
-                                    <td id="currentPriceTD">...</td>
-                                    <td id="high24TD">...</td>
-                                    <td id="low24TD">...</td>
-                            </tbody>
-                        </table>
-                        <h4>Chart</h4>
-                        <img src="./front-end/images-videos/chart.png" alt="Chart" title="chart" class="img-fluid">
-                        <hr>
-                        <div class="list-group">
-                            <h6 style="font-size: 1rem;">Top Trending coins in the last 24 hours</h6>
-                            <div id="trendingResults">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-primary" disabled>Add to Favorites</button>
-                    </div>
-                </div>
+          <!-- Modal starts -->
+    <div class="modal fade" id="modalID" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+          <div id="modalHeader" class="modal-header">
+              <img id="modalCoinImage"  src="./front-end/images-videos/loadingIcon.png" height="30px">
+              <h5 class="modal-title" id="modalH5">Coin title</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div id="modalDiv" class="modal-body">
+            <table class="table table-hover">
+                <thead>
+                  <tr>
+                    <th scope="col">Rank</th>
+                    <th scope="col">Current Price</th>
+                    <th scope="col"> <span style="color: green;">High</span></th>
+                    <th scope="col"><span style="color: red;">Low</span> 
+                    </th>
+                  </tr>
+                </thead>
+                <tbody>
+                <tr>
+                  <th id="marketCapRankTD"scope="row">...</th>
+                      <td id="currentPriceTD">...</td>
+                      <td id="high24TD">...</td>
+                      <td id="low24TD">...</td>
+                </tbody>
+            </table>
+            <h4>Chart</h4>
+            <img src="./front-end/images-videos/chart.png" alt="Chart" title="chart" class="img-fluid">
+            <hr>
+            <div class="list-group">
+                <h6 style="font-size: 1rem;">Top Trending coins in the last 24 hours</h6>
+                <div id="trendingResults"></div>
+            </div>
+          </div>
+            <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary" disabled>Add to Favorites</button>
             </div>
         </div>
-        <!-- model ends -->
+      </div>
     </div>
+      <!-- model ends -->
+  </div>
 </div>
-<div class="b-divider"></div>
 </main>
-
+<div class="b-divider"></div>
     <!-- MAIN SECTION ENDS -->
 
     <!-- COMMENTS SECTION STARTS -->
