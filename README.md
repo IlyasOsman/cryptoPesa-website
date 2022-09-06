@@ -35,5 +35,5 @@ The following technologies was used to build the front-end of applications
 
 ### 5. Author 
 
-&check; Ilyas Osman [![github](https://github.com/IlyasOsman)]
+&check; Ilyas Osman [./front-end/images-videos/github.png](https://github.com/IlyasOsman)
 
