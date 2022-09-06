@@ -285,5 +285,5 @@ document.addEventListener("DOMContentLoaded", function() {
 
 function relocateToSearch()
 {
-     location.href = "#searchResults";
+    location.href = "#searchResults";
 }
