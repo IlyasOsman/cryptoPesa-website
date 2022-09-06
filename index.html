@@ -199,25 +199,22 @@
 <br>
   <div class="container col-xl-10 col-xxl-8 px-4 py-5">
     <div class="row align-items-center g-lg-5 py-5">
-      <h4 class="text-center mb-4 pb-2">Comments</h4>                    
+      <h4 class="text-center mb-4 pb-2">See what others are saying</h4>                    
         <div class="container  col-md-12 col-lg-10 col-xl-8" >
-          <div class="card" id="message">
-
-            
-
-          </div>
             <div class="card-footer py-3 border-0">
-              <form action="" id="comment-form">
-                <textarea id="comment-input" class="form-control" id="textAreaExample" rows="4"
-              style="background: #fff;" placeholder="Leave comment"></textarea>
-                </br>
-                <button type="button" type="submit" class="btn btn-primary btn-sm py-2">Post comment</button>
-                &nbsp;
-                <button type="button" class="btn btn-outline-primary btn-sm py-2" id="resetButton" type="submit" onclick="resetSearch()">Cancel</button>
-              </form>         
+                <h5>Comments</h5>
+                <div id='list' class='comments'></div>
+            
+                <h6>Leave a comment</h6>
+            
+                <form id="comment-form" action="">
+                  <input type='text' name="comment" id="comment-input" cols="30" rows="10" placeholder="Write your comment here">
+                  </br>  
+                  <br> 
+                  <button id='submit' class="btn btn-primary">Post comment</button>
+                </form>   
+              </div> 
             </div>
-        </div>
-    </div>
   </div>
 </section>
 

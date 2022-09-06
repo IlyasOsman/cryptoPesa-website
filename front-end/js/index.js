@@ -1,46 +1,17 @@
 // Footer form 
-
-// form = document.getElementById("commentForm");
-// form.addEventListener("submit", (e) => {
-//     e.preventDefault();
-
-//     const image = e.target.document.getElementById('image');
-//     const name = e.target.document.getElementById('commentInput');
-//     const comment = e.target.getElementById('commentMessage');
-
-//     const profile = document.getElementsByClassName('image');
-//     profile.textContent = image;
-
-//     const h4 = document.createElement('h4');
-//     h4.textContent = name.value;
-//     const profileName = document.getElementById('profileName');
-//     profileName.append(h4);
-//     name.value = "";
-// }
-// )
-
-
-function submitComment () {
-    let userInput = document.querySelector('#comment-input');
-    let message = document.querySelector('#message');
-
-    message.innerHTML = `userInput.value`
-    userInput.reset();
-}
-
-
-const form = document.getElementById("comment-form");
-
+form = document.getElementById('comment-form');
 const comments = document.createElement("ul");
-document.getElementById("message").append(comments);
+comments.className = "list-unstyled";
+document.getElementById("list").append(comments);
 
 form.addEventListener("submit", (e) => {
     e.preventDefault();
-    let userInput = e.target.document.querySelector('#comment-input');
-    let li = document.createElement("li");
-    li.textContent = userInput.value;
+    const input = e.target.children[0];
+    const li = document.createElement("li");
+    li.textContent = input.value;
+    li.className = "border my-5";
     comments.append(li);
-    userInput.value = "";
+    input.value = "";
 });
 
 
