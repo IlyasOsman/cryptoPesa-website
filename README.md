@@ -30,7 +30,7 @@ The following technologies was used to build the front-end of applications <br/>
 
 ### 3. 
 
-### . Features
+### 4. Features
 &check; The website has the following. <br/>
 &nbsp; &nbsp; &check; A favicon.<br/>
 &nbsp; &nbsp; &check; A search button.<br/>
@@ -38,15 +38,15 @@ The following technologies was used to build the front-end of applications <br/>
 &nbsp; &nbsp; &check; A bootstrap card container holding contents.<br/>
 &nbsp; &nbsp; &check; A comment section.<br/>
 
-### . Acknowledgement
+### 5. Acknowledgement
 
 &check; Thanks to all who helped me overcame blockers. <br/>
 &check; Thanks to [Bootstrap](https://getbootstrap.com/) for making working easier.
 
-### . LICENSE
+### 6. LICENSE
 &check; Here [MIT](./MIT) is project license.
 
-### . Author 
+### 7. Author 
 
  &check; Ilyas Ali
         <br/>
