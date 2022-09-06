@@ -9,7 +9,7 @@ form.addEventListener("submit", (e) => {
     const input = e.target.children[0];
     const li = document.createElement("li");
     li.textContent = input.value;
-    li.className = "border my-5";
+    li.className = "border my-5 border-primary border-2 rounded-3 text-centre";
     comments.append(li);
     input.value = "";
 });
