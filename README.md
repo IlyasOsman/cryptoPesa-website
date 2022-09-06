@@ -7,39 +7,39 @@ The **Crypto```Pesa```** website application is a [Moringa School](https://morin
 ### 1. Usage of Application
 
 A user can access and do the following: 
-* Searchs for thousands of coins.
-* View :
-    > Prices of coins.<br />
-    > Ranks of coins.<br />
-    > High and low prices of each coins in the last 24 hours.
-* Click on a coin for additional details.
-* Access all above for free.
-* Add comments
+&check; Searchs for thousands of coins.
+&check; View :
+    > &check; Prices of coins.<br />
+    > &check; Ranks of coins.<br />
+    > &check; High and low prices of each coins in the last 24 hours.
+&check; Click on a coin for additional details.
+&check; Access all above for free.
+&check; Add comments
 
 ### 2. Technologies
 
 The following technologies was used to build the front-end of applications
 
-* HTML
-* CSS
-* JavaScript
-* Bootstrap 
+&check; HTML
+&check; CSS
+&check; JavaScript
+&check; Bootstrap 
 
 ### 3. Acknowledgement
 
-* Thanks to all who helped me overcame blockers.
-* Thanks to [Bootstrap](https://getbootstrap.com/) for making working easier.
+&check; Thanks to all who helped me overcame blockers.
+&check; Thanks to [Bootstrap](https://getbootstrap.com/) for making working easier.
 
 ### 4. LICENSE
-* Here [MIT](./MIT) is project license.
+&check; Here [MIT](./MIT) is project license.
 
 ### 5. Author 
 
  &check; Ilyas Osman 
         <br/>
-        &nbsp; &nbsp; &check; Github => [Ilyasosman](https://github.com/IlyasOsman)
+        &nbsp; &nbsp; &check; [Github](https://github.com/IlyasOsman)
         <br/>
-        &nbsp; &nbsp; &check; LinkedIn => 
+        &nbsp; &nbsp; &check; [LinkedIn](https://www.linkedin.com/in/ilyas-ali-74aa031b7)
         <br/>
-        &nbsp; &nbsp; &check; Twitter => 
+        &nbsp; &nbsp; &check; [Twitter](https://twitter.com/iOs__man)
 
