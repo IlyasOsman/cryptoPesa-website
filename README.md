@@ -27,5 +27,6 @@ The following technologies was used to build the front-end of applications
 
 ### 3. Acknowledgement
 
-* Thanks to all who contributed to this project whether directly or indirectly
+* Thanks to all who helped me overcame blockers.
+* Thanks to [Bootstrap](https://getbootstrap.com/) for making working easier.
 
