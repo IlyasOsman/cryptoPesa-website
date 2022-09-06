@@ -152,6 +152,9 @@ mainSearch()
 // Function to display search results
 function displaySearchCoins(coins) {
     const searchResults = document.querySelector('#searchResults');
+    const h6 = document.createElement('h6');
+    h6.textContent = 'Your searched results'
+    searchResults.append(h6);
     coins.forEach(coin => {
         const div = document.createElement('div')
         div.className = 'list-group';
