@@ -26,8 +26,8 @@ https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=market_cap_
 
 */
 
-// Function to fetch API.
-// convert to json
+//Fetching from API
+
 const coinGeckoApiData = () => {
     return fetch('https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=market_cap_desc&per_page=100&page=1&sparkline=false', { 
 
@@ -38,7 +38,7 @@ const coinGeckoApiData = () => {
        .then( response => response.json())
        .then(json => {
 
-        rendercoinGeckoApiData(json)
+        displaycoinGeckoApiData(json)
 
        }).catch(err => {
            console.log(err)
@@ -47,13 +47,13 @@ const coinGeckoApiData = () => {
 }
 coinGeckoApiData()
 
-// Rendering fetched data on DOM
-const rendercoinGeckoApiData = (json) => {
+// displaying fetched data on DOM
+const displaycoinGeckoApiData = (json) => {
     const tableBody = document.querySelector('#tableBody');
 
     json.forEach(coin => {
     const div = document.createElement('div')
-
+        // Injecting html
     div.innerHTML = `
         <button data-symbol="${coin.symbol}" id="modalButton" type="button" class="list-group-item list-group-item-action" data-bs-toggle="modal" data-bs-target="#modalID">
                 <div class="d-flex w-100 justify-content-between">
@@ -71,6 +71,7 @@ const rendercoinGeckoApiData = (json) => {
     });
 }
 
+// Mapping over each coin to display
 // const rendercoinGeckoApiData =.map((coin) => {
 //     let tableData = "";
 //     tableData += `
@@ -121,11 +122,10 @@ const topSearch = () => {
 }
 topSearch()
 
-// Top search Function END!
+
 
 /*
 Main search function to search for coins based on user input. 
-Must update code to work with new API endpoint
 */
 const mainSearch = () => {
     const mainSearchForm = document.querySelector('#form-2');
@@ -145,7 +145,6 @@ const mainSearch = () => {
     });
 }
 mainSearch()
-// Main search fetch Function END!
 
 
 // Function to render search results
@@ -228,6 +227,8 @@ function searchModalData({
         `
 }
 
+//Fetching trending coin
+
 function fetchTrendingCoins() {
     return fetch("https://api.coingecko.com/api/v3/search/trending", {
         headers: {
@@ -239,7 +240,7 @@ function fetchTrendingCoins() {
     
 }
 
-// render top 7 trending coins on Modal.
+// function to display top 7 trending coins on Modal.
 function renderTrendingCoins(coins) {
     const trendingResults = document.querySelector('#trendingResults');
     coins.sort((a, b) => a.item.market_cap_rank - b.item.market_cap_rank);
