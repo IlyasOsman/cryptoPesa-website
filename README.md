@@ -1,5 +1,8 @@
 ## PHASE 1 PROJECT
 
+[![MIT License](https://img.shields.io/badge/license-MIT-blue.svg?style=for-the-badge)](https://github.com/alelievr/Mixture/blob/master/LICENSE)
+[![Documentation](https://img.shields.io/badge/Documentation-github-brightgreen.svg?style=for-the-badge)](https://alelievr.github.io/Mixture/manual/GettingStarted.html)
+
 ### 0. Introduction
 
 The **Crypto```Pesa```** website application is a [Moringa School](https://moringaschool.com/) phase 1 project. I am required to build a Single Page JavaScript Application (SPA) that will communicate with a public API. The project enhances newly acquired skills in HTML, CSS, and JavaScript.
@@ -30,6 +33,8 @@ The following technologies was used to build the front-end of applications <br/>
 
 ### 3. Live site
 &nbsp; Here [www.cryptopesamarket.com](https://ilyasosman.github.io/cryptoPesa-website/) is cryptopesa live website accessible to the public<br/>
+
+
 
 ### 4. Features
 &check; The website has the following. <br/>
