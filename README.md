@@ -13,11 +13,11 @@ A user can access and do the following:
 <br/> 
 &check; Searchs for **thousands** of coins.
 <br/>
-&check; View :
+&check; View top **100** coins':
 <br/>
-     &nbsp; &nbsp; &check; Prices of coins.<br />
-     &nbsp; &nbsp; &check; Ranks of coins.<br />
-     &nbsp; &nbsp; &check; High and low prices of each coins in the last 24 hours.<br/>
+     &nbsp; &nbsp; &check; Prices.<br />
+     &nbsp; &nbsp; &check; Ranks.<br />
+     &nbsp; &nbsp; &check; High and low prices in the last 24 hours.<br/>
 &check; Click on a coin for additional details.<br/>
 &check; Access all above for free.<br/>
 &check; Add comments <br/>
