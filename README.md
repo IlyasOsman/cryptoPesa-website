@@ -30,6 +30,14 @@ The following technologies was used to build the front-end of applications <br/>
 
 ### 3. 
 
+### . Features
+&check; The website has the following. <br/>
+&nbsp; &nbsp; &check; A favicon.<br/>
+&nbsp; &nbsp; &check; A search button.<br/>
+&nbsp; &nbsp; &check; A reset button.<br/>
+&nbsp; &nbsp; &check; A bootstrap card container holding contents.<br/>
+&nbsp; &nbsp; &check; A comment section.<br/>
+
 ### . Acknowledgement
 
 &check; Thanks to all who helped me overcame blockers. <br/>
