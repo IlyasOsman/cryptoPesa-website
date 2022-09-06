@@ -30,3 +30,6 @@ The following technologies was used to build the front-end of applications
 * Thanks to all who helped me overcame blockers.
 * Thanks to [Bootstrap](https://getbootstrap.com/) for making working easier.
 
+### 4. LICENSE
+* Here [MIT](./MIT) is project license.
+
