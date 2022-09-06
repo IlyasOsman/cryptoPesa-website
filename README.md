@@ -5,7 +5,7 @@
 
 ### 0. Introduction
 
-The [![CRYPTOPESA](https://img.shields.io/badge/Documentation-github-brightgreen.svg?style=for-the-badge)]() website application is a [Moringa School](https://moringaschool.com/) phase 1 project. I am required to build a Single Page JavaScript Application (SPA) that will communicate with a public API. The project enhances newly acquired skills in HTML, CSS, and JavaScript.
+The **Crypto```Pesa```** website application is a [Moringa School](https://moringaschool.com/) phase 1 project. I am required to build a Single Page JavaScript Application (SPA) that will communicate with a public API. The project enhances newly acquired skills in HTML, CSS, and JavaScript.
 
 ### 1. Usage of Application
 
