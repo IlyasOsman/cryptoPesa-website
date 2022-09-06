@@ -220,7 +220,7 @@ function searchModalData({
     const modalHeader = document.getElementById('modalHeader')
     const modalCoinTitle = document.getElementById('modalH5')
         modalCoinTitle.textContent = `
-            ${name}  ${symbol.toUppercase()}
+            ${name}  ${symbol.toUpperCase()}
         `
     const modalCoinImage = document.getElementById('modalCoinImage')
         modalCoinImage.src = `
