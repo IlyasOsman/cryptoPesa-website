@@ -32,16 +32,16 @@ const coinGeckoApiData = () => {
     return fetch('https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=market_cap_desc&per_page=100&page=1&sparkline=false', { 
 
         headers: {
-           Accept: "application/json"
+            Accept: "application/json"
         }
     })
-       .then( response => response.json())
-       .then(json => {
+        .then( response => response.json())
+        .then(json => {
 
         displaycoinGeckoApiData(json)
 
-       }).catch(err => {
-           console.log(err)
+        }).catch(err => {
+            console.log(err)
 
         })
 }
