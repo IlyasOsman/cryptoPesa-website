@@ -134,9 +134,9 @@ const mainSearch = () => {
         const userInput = document.querySelector('input#searchCoinID2');
             fetch(`https://api.coingecko.com/api/v3/search?query=${userInput.value}`, { 
 
-                 headers: {
+                headers: {
                     Accept: "application/json"
-                 }
+                }
             })
                 .then( response => response.json())
                 .then(json => {
@@ -236,12 +236,12 @@ function fetchTrendingCoins() {
         }
     })
     .then(resp => resp.json())
-    .then(json => renderTrendingCoins(json.coins));
+    .then(json => displayTrendingCoins(json.coins));
     
 }
 
 // function to display top 7 trending coins on Modal.
-function renderTrendingCoins(coins) {
+function displayTrendingCoins(coins) {
     const trendingResults = document.querySelector('#trendingResults');
     coins.sort((a, b) => a.item.market_cap_rank - b.item.market_cap_rank);
     coins.forEach(coin => {
