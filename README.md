@@ -34,7 +34,6 @@ The following technologies was used to build the front-end of applications
 * Here [MIT](./MIT) is project license.
 
 ### 5. Author 
-        | Name        | Github                                       | Twitter |
-        |---|---|-----|
-|&check;| Ilyas Osman |   [![github](https://github.com/IlyasOsman)] |         |
+
+&check; Ilyas Osman [![github](https://github.com/IlyasOsman)]
 
