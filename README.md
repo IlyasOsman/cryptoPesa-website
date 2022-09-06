@@ -37,9 +37,9 @@ The following technologies was used to build the front-end of applications
 
  &check; Ilyas Osman 
         <br/>
-        &check; Github => [Ilyasosman](https://github.com/IlyasOsman)
+        &nbsp; &nbsp; &check; Github => [Ilyasosman](https://github.com/IlyasOsman)
         <br/>
-        &check; LinkedIn => 
+        &nbsp; &nbsp; &check; LinkedIn => 
         <br/>
-        &check; Twitter => 
+        &nbsp; &nbsp; &check; Twitter => 
 
