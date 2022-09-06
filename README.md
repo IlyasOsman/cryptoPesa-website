@@ -46,3 +46,5 @@ The following technologies was used to build the front-end of applications <br/>
         <br/>
         &nbsp; &nbsp; &check; [Twitter](https://twitter.com/iOs__man)
 
+<p>Like project? Give me a star.</p>
+
